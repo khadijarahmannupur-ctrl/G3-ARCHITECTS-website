@@ -130,6 +130,48 @@ main > section{
     margin-bottom: 32px;
 }
 
+/* love-enjoy section styels  */
+.love-enjoy{
+    max-width: 1440px;
+    gap: 50px;
+}
+#love-enjoy-h{
+    border-left: 5px solid #FF900E;
+    padding-left: 20px;
+    margin-top: 0;
+}
+.love-enjoy-card {
+    padding: 30px;
+    box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.06);
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+.love-enjoy-card .love-enjoy-title{
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+#love-enjoy-p{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.love-enjoy-architect img{
+    width: 100%;
+}
+#Experience{
+    padding: 45px 42px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-left: -85px;
+    margin-top: -1200px;
+}
+#Experience-years{
+    font-size: 4rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
 /* some fact section styels */
 /* .facts{
     max-width: 1440px;
@@ -195,12 +237,32 @@ main > section{
     gap: 100px;
 }
 
+/* footer styles  */
+#footer{
+    margin-top: 150px;
+    margin-bottom: 200px;
+}
+.footer-content{
+    max-width: 1440px;
+    height: 100px;
+    background-color: #FFF4E7;
+    margin: 130px auto;
+}
+.footer-content .footer-p{
+    padding-top: 40px;
+     font-size: 1.25rem;
+    text-align: center;
+}
+
+  
+
 /* responsive media query */
 
 @media screen and (max-width:576px) {
    .navbar, 
    .nav-links,
-   .features
+   .features,
+   .love-enjoy
    {
     flex-direction: column;
    } 
@@ -225,12 +287,18 @@ main > section{
    .features-content{
     align-items: center;
    }
+   #Experience{
+    margin-top: 30px;
+    margin-left: 50px;
+    
+   }
     
 }
 
+
 /* medium size devise */
 @media screen and (min-width:576px) and (max-width:992px) {
-    .features{
+    .features,.love-enjoy{
         flex-direction: column;
     }
     .features-content{
@@ -242,6 +310,12 @@ main > section{
         gap: 50px;
         justify-items: center;
     }
+    #Experience{
+    margin-top: 30px;
+    margin-left: 250px;
+    
+    
+   }
 
     
 }
