@@ -273,9 +273,10 @@ main > section{
    {
     grid-template-columns: repeat(1,1fr);
    }
-   .facts-container,{
+   .facts-container{
     justify-items: center;
     gap: 24px;
+    align-items: center;
    }
    .sponsor-img{
     justify-items: center;
@@ -289,7 +290,7 @@ main > section{
    }
    #Experience{
     margin-top: 30px;
-    margin-left: 50px;
+    margin-left: 20px;
     
    }
     
