@@ -100,6 +100,7 @@ main > section{
 }
 /* Featuers styels */
 .features{
+    /* max-width: 1320px; */
     align-items: center;
 }
 .features-img{
@@ -128,16 +129,98 @@ main > section{
     max-width: 500px;
     margin-bottom: 32px;
 }
+
+/* some fact section styels */
+/* .facts{
+    max-width: 1440px;
+} */
+.fact-p{
+    max-width: 540px;
+}
+.facts-container{
+    max-width: 1340px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 124px;
+    
+    
+}
+.fact-card{
+    max-height: 240px;
+    max-width: 240px;
+    border: 1px solid #FF900E;
+    border-radius: 8px;
+    align-items: center;
+    text-align: center;
+    padding: 35px;
+    margin-top: 100px;
+}
+/* .fact-icon{
+    padding-bottom: 0;
+} */
+.fact-number{
+    color:#424242;
+    font-size: 2.8rem;
+    font-weight: 600;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+.fact-name{
+    color: #727272;
+    font-size: 1.15rem;
+    font-weight: 600;
+    margin-top: 5px;
+    margin-bottom: 0px;
+}
+
+/* sponsor styels */
+
+/* .our-sponsors{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 100px;
+} */
+.our-sponsors{
+
+}
+.sponsor-info{
+    max-width: 540px;
+    margin: 50px auto;
+    text-align: center;
+}
+.sponsor-img{
+    filter: grayscale(100%);
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 100px;
+}
+
 /* responsive media query */
 
 @media screen and (max-width:576px) {
    .navbar, 
    .nav-links,
-   .features{
+   .features
+   {
     flex-direction: column;
    } 
-   .features-img{
+   .features-img,
+   .facts-container,
+   .our-sponsors,
+   .sponsor-img
+   {
     grid-template-columns: repeat(1,1fr);
+   }
+   .facts-container,{
+    justify-items: center;
+    gap: 24px;
+   }
+   .sponsor-img{
+    justify-items: center;
+    gap: 50px;
+   }
+   .fact-card{
+    margin-top: 0px;
    }
    .features-content{
     align-items: center;
@@ -153,6 +236,11 @@ main > section{
     .features-content{
         margin: 40px auto;
         text-align: center;
+    }
+    .sponsor-img,.facts-container{
+        grid-template-columns: repeat(2,1fr);
+        gap: 50px;
+        justify-items: center;
     }
 
     
